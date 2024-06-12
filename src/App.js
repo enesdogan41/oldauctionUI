@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TotalRevenue from './components/TotalRevenue';
+import CoopShare from './components/CoopShare';
+import FishermanShare from './components/FishermanShare';
+import './styles.css'; // Import the CSS file here
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Auction Management Dashboard</h1>
+      <TotalRevenue />
+      <CoopShare />
+      <FishermanShare />
     </div>
   );
 }
